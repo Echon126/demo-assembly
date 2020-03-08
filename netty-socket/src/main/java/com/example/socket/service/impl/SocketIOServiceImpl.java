@@ -1,10 +1,11 @@
-package com.example.service.socket.impl;
+package com.example.socket.service.impl;
 
 import com.corundumstudio.socketio.SocketIOClient;
 import com.corundumstudio.socketio.SocketIOServer;
-import com.example.service.socket.PushMessage;
-import com.example.service.socket.SocketIOMessage;
-import com.example.service.socket.SocketIOService;
+
+import com.example.socket.service.PushMessage;
+import com.example.socket.service.SocketIOMessage;
+import com.example.socket.service.SocketIOService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

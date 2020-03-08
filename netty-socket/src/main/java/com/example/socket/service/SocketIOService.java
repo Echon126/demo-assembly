@@ -1,4 +1,4 @@
-package com.example.service.socket;
+package com.example.socket.service;
 
 public interface SocketIOService {
     public static final String PUSH_EVENT = "push-event";

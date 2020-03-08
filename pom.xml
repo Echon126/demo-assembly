@@ -8,6 +8,7 @@
         <module>example-api</module>
         <module>example-common</module>
         <module>example-demo</module>
+        <module>netty-socket</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

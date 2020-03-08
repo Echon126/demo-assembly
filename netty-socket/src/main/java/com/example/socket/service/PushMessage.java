@@ -1,4 +1,4 @@
-package com.example.service.socket;
+package com.example.socket.service;
 
 import lombok.*;
 
