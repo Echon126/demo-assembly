@@ -57,18 +57,16 @@ public class ChatServerPool {
         synchronized (cs) {
             if (event != null && !"".equals(event)) {
                 for (SocketIOClient conn : cs) {
-                    if (conn != null) {
-                        conn.sendEvent(event, message);
-                    }
+                    if (conn == null) continue;
+                    conn.sendEvent(event, message);
                 }
             } else {
                 for (SocketIOClient conn : cs) {
-                    if (conn != null) {
-                        conn.sendEvent(message);
-                    }
+                    if (conn == null) continue;
+                    conn.sendEvent(message);
                 }
             }
-
         }
     }
+
 }
