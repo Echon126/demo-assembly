@@ -1,7 +1,7 @@
 package com.example.api.pub;
 
 
-import com.example.common.enums.RedisChannelEnums;
+import com.example.common.enums.redis.RedisChannelEnums;
 
 public interface RedisPub {
 

@@ -1,4 +1,4 @@
-package com.example.common.enums;
+package com.example.common.enums.redis;
 
 public enum RedisChannelEnums {
 
