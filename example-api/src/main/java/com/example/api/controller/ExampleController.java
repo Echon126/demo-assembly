@@ -19,7 +19,6 @@ public class ExampleController {
     private RedisPub redisPub;
 
 
-
     @RequestMapping("/test")
     public String pusMessage() {
         LiveChangeMessage basePubMessage = new LiveChangeMessage();
@@ -42,12 +41,14 @@ public class ExampleController {
         logger.info("事件发布完成");
         return "发布成功";
     }
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
     @RequestMapping("/test02")
     public String ListenerMQ() {
         logger.info("开始发布事件");
-        for(int i=0;i<100;i++){
+        for (int i = 0; i < 100; i++) {
             rabbitTemplate.convertAndSend("t_message_f", "cccccccccccccccccccc");
 
         }

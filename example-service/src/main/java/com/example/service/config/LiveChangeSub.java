@@ -6,7 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class LiveChangeSub implements BaseSub {
 
-    /**只是定义的注解测试，可以换成自己的*/
+    /**
+     * 只是定义的注解测试，可以换成自己的
+     */
 
 
     @Override

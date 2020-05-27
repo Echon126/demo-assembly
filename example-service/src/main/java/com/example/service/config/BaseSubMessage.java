@@ -9,7 +9,9 @@ import java.util.Map;
 @Data
 abstract class BaseSubMessage {
 
-    /** 发布订阅频道名称 */
+    /**
+     * 发布订阅频道名称
+     */
     private String channel;
 
     private String extra;
@@ -41,13 +43,13 @@ abstract class BaseSubMessage {
     }
 
     BaseSubMessage(String json) {
-        if(StringUtils.isEmpty(json)){
+        if (StringUtils.isEmpty(json)) {
             return;
         }
 
         this.json = json;
         Map map = new Gson().fromJson(this.json, Map.class);
-       // BeanHelper.populate(this, map);
+        // BeanHelper.populate(this, map);
     }
 
 }

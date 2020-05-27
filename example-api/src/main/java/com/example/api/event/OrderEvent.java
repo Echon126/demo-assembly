@@ -1,6 +1,6 @@
 package com.example.api.event;
 
-public class OrderEvent  {
+public class OrderEvent {
     private String price;
 
     public String getPrice() {

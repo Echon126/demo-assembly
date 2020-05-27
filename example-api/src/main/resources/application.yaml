@@ -2,8 +2,8 @@ server:
   port: 8089
 #
 spring:
-   rabbitmq:
-     host: 192.168.2.225
-     port: 5672
-     username: admin
-     password: admin
+  rabbitmq:
+    host: 192.168.2.225
+    port: 5672
+    username: admin
+    password: admin

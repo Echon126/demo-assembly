@@ -13,7 +13,9 @@ public class LiveChangeMessage extends BasePubMessage {
         this.liveIds = liveIds;
     }
 
-    /**直播Ids*/
+    /**
+     * 直播Ids
+     */
     private String liveIds;
 
     @Override

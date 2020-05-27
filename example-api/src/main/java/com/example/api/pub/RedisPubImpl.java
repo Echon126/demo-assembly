@@ -16,7 +16,7 @@ public class RedisPubImpl implements RedisPub {
     @Override
     public void sendMessage(RedisChannelEnums redisChannelEnums, BasePubMessage basePubMessage) {
 
-        if(redisChannelEnums ==null || basePubMessage ==null){
+        if (redisChannelEnums == null || basePubMessage == null) {
             return;
         }
 

@@ -30,8 +30,7 @@ public class RedisConfig {
     /**
      * 注入所有实现了Strategy接口的Bean
      *
-     * @param strategyMap
-     *         策略集合
+     * @param strategyMap 策略集合
      */
     @Autowired
     public RedisConfig(Map<String, BaseSub> strategyMap) {
@@ -46,7 +45,6 @@ public class RedisConfig {
      * Redis消息监听器容器
      *
      * @param connectionFactory
-     *
      * @return
      */
     @Bean
@@ -58,7 +56,7 @@ public class RedisConfig {
         RedisChannelEnums[] redisChannelEnums = RedisChannelEnums.values();
         if (redisChannelEnums.length > 0) {
             for (RedisChannelEnums redisChannelEnum : redisChannelEnums) {
-                if (redisChannelEnum == null || StringUtils.isEmpty(redisChannelEnum.getCode()) || redisChannelEnum.getClassName()==null) {
+                if (redisChannelEnum == null || StringUtils.isEmpty(redisChannelEnum.getCode()) || redisChannelEnum.getClassName() == null) {
                     continue;
                 }
                 //订阅了一个叫pmp和channel 的通道，多通道
@@ -75,9 +73,7 @@ public class RedisConfig {
     /**
      * 配置消息接收处理类
      *
-     * @param baseSub
-     *         自定义消息接收类
-     *
+     * @param baseSub 自定义消息接收类
      * @return MessageListenerAdapter
      */
     @Bean()

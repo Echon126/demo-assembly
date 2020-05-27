@@ -1,17 +1,17 @@
-    package com.example.api.mq;
+package com.example.api.mq;
 
-    import org.springframework.amqp.rabbit.annotation.RabbitHandler;
-    import org.springframework.amqp.rabbit.annotation.RabbitListener;
-    import org.springframework.stereotype.Component;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.stereotype.Component;
 
-    @Component
-    @RabbitListener(queues = "t_message_f")
-    public class RabbitMQListener {
-        @RabbitHandler
-        public void receive1(String message) throws InterruptedException {
-            Thread.sleep(1000);
-            System.err.println("xudc -- receive1接收到消息：" + message);
-        }
+@Component
+@RabbitListener(queues = "t_message_f")
+public class RabbitMQListener {
+    @RabbitHandler
+    public void receive1(String message) throws InterruptedException {
+        Thread.sleep(1000);
+        System.err.println("xudc -- receive1接收到消息：" + message);
+    }
     /*
 
         @RabbitListener(queues = "xudc.book")
@@ -25,4 +25,4 @@
         }
     */
 
-    }
+}

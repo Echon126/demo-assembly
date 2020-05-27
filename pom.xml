@@ -9,6 +9,7 @@
         <module>example-common</module>
         <module>example-demo</module>
         <module>netty-socket</module>
+        <module>example-domain</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
