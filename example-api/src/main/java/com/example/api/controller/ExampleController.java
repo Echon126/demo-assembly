@@ -2,8 +2,8 @@ package com.example.api.controller;
 
 import com.example.api.event.OrderEvent;
 import com.example.api.pub.LiveChangeMessage;
+import com.example.api.pub.RedisChannelEnums;
 import com.example.api.pub.RedisPub;
-import com.example.common.enums.redis.RedisChannelEnums;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

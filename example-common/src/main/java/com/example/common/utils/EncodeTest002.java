@@ -1,4 +1,4 @@
-package com.example.common.enums.utils;
+package com.example.common.utils;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
