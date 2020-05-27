@@ -12,11 +12,11 @@
     <artifactId>example-service</artifactId>
 
     <dependencies>
-<!--        <dependency>
-            <groupId>com.example.assembly</groupId>
-            <artifactId>example-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>com.example.assembly</groupId>
+                    <artifactId>example-common</artifactId>
+                    <version>0.0.1-SNAPSHOT</version>
+                </dependency>-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -33,6 +33,16 @@
             <groupId>com.googlecode.aviator</groupId>
             <artifactId>aviator</artifactId>
             <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tianta.ccube.rt.xdte</groupId>
+            <artifactId>rt-xdte</artifactId>
+            <version>dev-0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
         </dependency>
     </dependencies>
 

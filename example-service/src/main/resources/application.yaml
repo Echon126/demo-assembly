@@ -1,2 +1,19 @@
 server:
   port: 8088
+
+dubbo:
+  consumer:
+    check: false
+    timeout: 120000000
+  provider:
+    retries: 0
+    timeout: 120000000
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  application:
+    qosEnable: false
+    name: dubbo-simulation-api
+  protocol:
+    name: dubbo
+    port: 20828
+    payload: 51000000
